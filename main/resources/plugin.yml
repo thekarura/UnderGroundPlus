@@ -1,0 +1,12 @@
+name: UnderGroundPlus
+main: com.github.thekarura.bukkit.plugin.undergroundplus.UnderGroundPlus
+version: 1.7.2-1000
+author: the_karura
+description: This plugin underground customize.
+commands:
+  UnderGroundPlus:
+    description: This plugin help guid.
+    aliases: [ugp, ug]
+    usage: /<command> [reload]
+    permission: UnderGroundPlus.Command
+    permission-message: You don't have <permission>
