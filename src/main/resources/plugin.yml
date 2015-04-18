@@ -1,0 +1,11 @@
+name: UnderGroundPlus
+main: com.github.thekarura.bukkit.plugin.undergroundplus.UnderGroundPlus
+version: 1.7.10-1000
+author: the_karura
+description: ${project.description}
+load: postworld
+commands:
+  UnderGroundPlus:
+    aliases: ugp
+    permission: UnderGroundPlus.Command.UnderGroundPlus
+    permission-message: You do not have <permission>.

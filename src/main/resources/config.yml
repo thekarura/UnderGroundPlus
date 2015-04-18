@@ -1,0 +1,370 @@
+# ============================================== #
+# undergroundplus
+# configuration file
+# 
+# ============================================== #
+
+# 'enable' if generate world disable to false.
+enable: true
+
+# allow generate world list.
+# if add world ' - [world name]'
+worlds:
+- DEBUG
+- Example_World_1
+- Example_World_2
+- Example_World_3
+
+# underground bottom layer generate config.
+# 'enable' bottom generate enable to true.
+# 'heigth' generate heigth. default y = 15
+# 'blocks' generate blocks setting.
+bottom:
+  enable: true
+  heigth:
+    max: 256
+    min: 20
+    gradation: 5
+  blocks:
+    - bedrock 30
+
+# help guid message.
+command:
+  help:
+    message:
+    - '========== [UnderGroundPlus] =========='
+    - 'world generator plugin.'
+    - 'command guid.'
+    - '/ugp &a&nhelp&r - help guid.'
+    - '/ugp &a&nreload&r - a plugin reload.'
+    - '======================================='
+  reload:
+    message: 'a plugin has reloaded.'
+
+# 
+biomes:
+  forest:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - air
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  forest_hills:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - air
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  flower_forest:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - air
+    - red_rose
+    - red_rose 1
+    - red_rose 2
+    - red_rose 3
+    - red_rose 4
+    - red_rose 5
+    - red_rose 6
+    - red_rose 7
+    - red_rose 8
+  birch_forest:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  birch_forest_hills:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  birch_forest_hills_mountains:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  birch_forest_mountains:
+    layers:
+    - dirt 0 20
+    - cobblestone 0 30
+    floots:
+    - grass
+    floot_plants:
+    - long_grass 1 80
+    - yellow_flower 0 20
+    - red_rose 0 20
+  roofed_forest:
+    floots:
+    - grass
+    floots_plains:
+    - long_grass 2 90
+  roofed_forest_mountains:
+    floots:
+    - grass
+    floots_plains:
+    - long_grass 2 90
+  savanna:
+    floots:
+    - dirt
+  savanna_mountains:
+    floots:
+    - dirt
+  savanna_plateau:
+    floots:
+    - dirt
+  savanna_plateau_mountains:
+    floots:
+    - dirt
+  desert:
+    floots:
+    - sand
+    floot_plants:
+    - air
+    - dead_bush
+    tops:
+    - sandstone
+  desert_hills:
+    layers:
+    - stone
+    - sandstone
+    floots:
+    - sand
+    tops:
+    - sandstone
+  desert_mountains:
+    layers:
+    - stone
+    - sandstone
+    floots:
+    - sand
+    tops:
+    - sandstone
+  jungle:
+    set:
+      top_plants:
+        min: 1
+        max: 5
+    layers:
+    - dirt 0 50
+    - clay 0 40
+    floots:
+    - grass
+    - soul_sand 0 30
+    floot_plants:
+    - air
+    - long_grass 1 70
+    - yellow_flower 0 10
+    - brown_mushroom 0 10
+    - red_mushroom 0 10
+    tops:
+    - dirt
+    top_plants:
+    - vine 15 50
+  jungle_edge:
+    set:
+      top_plants:
+        min: 1
+        max: 5
+    layers:
+    - dirt 0 50
+    - clay 0 40
+    floots:
+    - grass
+    - soul_sand
+    floot_plants:
+    - air
+    - long_grass 1 70
+    - yellow_flower 0 10
+    - brown_mushroom 0 10
+    - red_mushroom 0 10
+    tops:
+    - dirt
+    top_plants:
+    - vine 15 50
+  jungle_edge_mountains:
+    set:
+      top_plants:
+        min: 1
+        max: 5
+    layers:
+    - dirt 0 50
+    - clay 0 40
+    floots:
+    - grass
+    - soul_sand
+    floot_plants:
+    - air
+    - long_grass 1 70
+    - yellow_flower 0 10
+    - brown_mushroom 0 10
+    - red_mushroom 0 10
+    tops:
+    - dirt
+    top_plants:
+    - vine 15 50
+  jungle_hills:
+    set:
+      top_plants:
+        min: 1
+        max: 5
+    layers:
+    - dirt 0 50
+    - clay 0 40
+    floots:
+    - grass
+    - soul_sand
+    floot_plants:
+    - air
+    - long_grass 1 70
+    - yellow_flower 0 10
+    - brown_mushroom 0 10
+    - red_mushroom 0 10
+    tops:
+    - dirt
+    top_plants:
+    - vine 15 50
+  jungle_mountains:
+    set:
+      top_plants:
+        min: 1
+        max: 5
+    layers:
+    - dirt 0 50
+    - clay 0 40
+    floots:
+    - grass
+    - soul_sand
+    floot_plants:
+    - air
+    - long_grass 1 70
+    - yellow_flower 0 10
+    - brown_mushroom 0 10
+    - red_mushroom 0 10
+    tops:
+    - dirt
+    top_plants:
+    - vine 15 50
+  ocean:
+    floots:
+    - gravel
+  deep_ocean:
+    floots:
+    - gravel
+  river:
+    floots:
+    - gravel
+  stone_beach:
+    floots:
+    - cobblestone
+    top:
+    - cobblestone
+  swampland:
+    set:
+      top_plants:
+        min: 1
+        max: 2
+    layers:
+    - dirt 0 40
+    - clay 0 40
+    floots:
+    - grass 0 50
+    - soul_sand 0 50
+    floot_plants:
+    - long_grass 1 80
+    - long_grass 2 80
+    - brown_mushroom 0 30
+    - red_mushroom 0 30
+    tops:
+    - dirt 0
+    top_plants:
+    - vine 15 40
+  swampland_mountains:
+    set:
+      top_plants:
+        min: 1
+        max: 2
+    layers:
+    - dirt 0 40
+    - clay 0 40
+    floots:
+    - grass 0 50
+    - soul_sand 0 50
+    floot_plants:
+    - long_grass 1 80
+    - long_grass 2 80
+    - brown_mushroom 0 30
+    - red_mushroom 0 30
+    tops:
+    - dirt 0
+    top_plants:
+    - vine 15 40
+  ice_plains:
+    floots:
+    - ice 0 80
+    tops:
+    - snow_block
+  ice_mountains:
+    floots:
+    - ice 0 80
+    tops:
+    - snow_block
+  ice_plains_spikes:
+    floots:
+    - ice 0 80
+    tops:
+    - snow_block
+  frozen_ocean:
+    floots:
+    - gravel
+    tops:
+    - snow_block
+  frozen_river:
+    floots:
+    - gravel
+    tops:
+    - snow_block
+  mushroom_island:
+    floots:
+    - mycel
+    floot_plants:
+    - brown_mushroom 0 80
+    - red_mushroom 0 80
+    tops:
+    - dirt
+  mushroom_shore:
+    floots:
+    - mycel
+    floot_plants:
+    - brown_mushroom 0 80
+    - red_mushroom 0 80
+    tops:
+    - dirt
